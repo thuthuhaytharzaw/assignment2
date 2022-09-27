@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style type="text/css">
+        body{
+            height: 100vh;
+            background-color: #000;
+            color: #fff;
+
+
+            padding: 0;
+            margin: 0;
+        }
+
+        .banner{
+            height: 10%;
+            background-color: #000;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5%;
+            z-index: -1;
+         }
+
+        .banner-left{
+            color: skyblue;
+            font-size: 20px;
+            letter-spacing: 3px;
+
+            display: flex;
+            align-items: center;
+
+            margin-left: 30px;
+        }
+
+        .banner-left p{
+            color: #fff;
+            text-transform: uppercase;
+            margin-left: 10px;
+        }
+
+        .banner-right {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+          
+            margin-right: 30px;
+        }
+
+        .banner-right a{
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: 2px;
+            border-left: 1px solid skyblue;
+
+            padding:5px 30px;
+
+            transition: all .3s;
+        }
+
+        .banner-right a:hover{
+            color: white;
+            border-bottom: 1px solid skyblue;
+            border-left: 1px solid skyblue;
+
+            padding: 10px 30px;
+        }
+
+        .banner-right a:nth-of-type(4){
+            color: white;
+            border-bottom: 1px solid skyblue;
+            border-left: 1px solid skyblue;
+
+            padding: 10px 30px;
+        }
+
+        .content-body{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .content-body img{
+            width: 50%;
+        }
+
+        .content-body .text{
+            width: 50%;
+            text-align: center;
+        }
+
+        .content-body .text h1{
+            font-family: sans-serif;
+            color: transparent;
+            font-size: 40px;
+            letter-spacing: 1px;
+
+            -webkit-text-stroke: 2px skyblue;
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        .text h1::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent 0%,
+                #000 0%,
+                #000 100%);
+
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            animation-name: myani;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes myani{
+            from{
+                left: 0%;
+            }
+            to{
+                left: 100%;
+            }
+        }
+
+        .content-body .text p{
+            font-size: 16px;
+            letter-spacing: 1px;
+            line-height: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <section class='banner'>
+        <div class='banner-left'>
+          <h2>AVAMAS</h2>
+          <p>home decoration</p>
+        </div>
+        <div class='banner-right'>
+          <a href='#'>Home</a>
+          <a href='#'>About Us</a>
+          <a href='#'>Our Sevices</a>
+          <a href='#'>Contact</a>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="content-body">
+            <img src="https://pngroyale.com/wp-content/uploads/2021/11/Download-house-png-image-web-icons-png-.png">
+            <div class="text">
+                <h1>What is AVAMAS Home Decoration ?</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+    </section>
+
+
+    
+</body>
+</html>

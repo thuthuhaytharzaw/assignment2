@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our Services</title>
+    <style type='text/css'>
+
+    	body{
+    		background-color: #000;
+
+    		padding: 0;
+    		margin: 0;
+
+    		position: relative;
+    	}
+
+    	.banner{
+		    height: 10%;
+		    background-color: #000;
+
+		    display: flex;
+		    justify-content: space-between;
+		    align-items: center;
+		    margin-bottom: 10%;
+
+		    position: fixed;
+		    top: 0;
+		    right: 0;
+		    left: 0;
+		    z-index: -1;
+		}
+
+	    .banner-left{
+		    color: skyblue;
+			font-size: 20px;
+		    letter-spacing: 3px;
+
+		    display: flex;
+		    align-items: center;
+
+		    margin-left: 30px;
+		}
+
+        .banner-left p{
+            color: #fff;
+            text-transform: uppercase;
+            margin-left: 10px;
+        }
+
+	    .banner-right {
+	        display: flex;
+		    justify-content: space-around;
+		    align-items: center;
+	      
+	        margin-right: 30px;
+	    }
+
+	    .banner-right a{
+	        color: #fff;
+	        text-decoration: none;
+	        letter-spacing: 2px;
+	        border-left: 1px solid skyblue;
+
+	        padding:5px 30px;
+
+	        transition: all .3s;
+	    }
+
+	    .banner-right a:hover{
+	        color: white;
+	        border-bottom: 1px solid skyblue;
+	        border-left: 1px solid skyblue;
+
+	        padding: 10px 30px;
+	    }
+
+	    .banner-right a:nth-of-type(3){
+	        color: white;
+	        border-bottom: 1px solid skyblue;
+	        border-left: 1px solid skyblue;
+
+	        padding: 10px 30px;
+	    }
+
+	    .container{
+	    	color: #fff;
+	    	position: absolute;
+	    	left: 0;
+	    	right: 0;
+	    	top: -10%;
+
+	    	transform: translateY(20%);
+	    }
+
+	    .container .title{
+	    	text-align: center;
+	    }
+
+	    .img-box-1,.img-box-2{
+	    	display: flex;
+	    	justify-content: center;
+	    	align-items: center;
+
+	    	/*margin: 10px;*/
+	    }
+
+	    .img-box-1 div h2,.img-box-2 div h2{
+	    	font-size: 20px;
+	    	font-weight: 200;
+	    	letter-spacing: 1px;
+	    	text-transform: uppercase;
+	    	text-align: center;
+	    }
+
+
+	    img{
+	    	width: 300px;
+	    	height: 200px;
+
+	    	cursor: pointer;
+
+	    	/*margin:0 10px;*/
+
+	    	transition: .3s;
+	    }
+
+	    img:hover{
+	    	opacity: .6;
+	    }
+       
+    </style>
+</head>
+<body>
+
+	<section class='banner'>
+	    <div class='banner-left'>
+	      <h2>AVAMAS</h2>
+	      <p>Home Decoration</p>
+	    </div>
+	    <div class='banner-right'>
+	      <a href='#'>Home</a>
+	      <a href='#'>About Us</a>
+	      <a href='#'>Our Services</a>
+	      <a href='#'>Contact</a>
+	    </div>
+    </section>
+
+    
+
+    <div class="container">
+	    <div class="title">
+	    	<h1>Our Services</h1>
+	    	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+	    </div>
+
+    	<div class="img-box-1">
+    		<div>
+    			<img src="https://foyr.com/learn/wp-content/uploads/2019/02/interior-design-ideas-for-living-room.jpg">
+    			<h2>Living Room</h2>
+    		</div>
+
+    		<div>
+			    <img src="https://c0.wallpaperflare.com/preview/706/275/827/bedroom-interior-design-style.jpg">
+    			<h2>Bed Room</h2>
+    		</div>
+
+    		<div>
+			    <img src="https://media.designcafe.com/wp-content/uploads/2021/07/19183336/grey-dining-room-ideas-for-your-home.jpg">
+    			<h2>Dining Room</h2>
+    		</div>
+    	</div>
+	    <div class="img-box-2">
+
+    		<div>
+		    	<img src="https://inspiredclosetsmediafiles.s3.amazonaws.com/wp-content/uploads/2021/11/15112549/DS_447-4.jpg">
+    			<h2>Pantary Room</h2>
+    		</div>
+
+    		<div>
+			    <img src="https://s30965.pcdn.co/blogs/the-study/wp-content/uploads/36_EditOne.jpg">
+    			<h2>Mini Libriary Room</h2>
+    		</div> 		
+
+    		<div>
+			    <img src="https://mydecorative.com/wp-content/uploads/2017/11/Meeting-Room-for-Your-Home-Office.jpg">
+    			<h2>Metting Room</h2>
+    		</div>
+	    </div>
+    </div>
+</body>
+</html>
